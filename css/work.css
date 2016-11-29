@@ -1,0 +1,111 @@
+.titwords,
+.moto,
+.visionw {
+    text-align: center;
+    font-family: myFont;
+}
+
+.titwords {
+    padding-top: 40px;
+}
+
+.visionw {
+    padding: 10px;
+    font-family: myFont;
+}
+
+
+/** Image and paragraphs**/
+
+.imgp {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.container {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container {
+    margin: 0;
+}
+
+.pap {
+    padding: 20px;
+    margin-right: 0px;
+}
+
+.upperArea {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#logo1 {
+    height: 280px;
+    width: 450px;
+    /* padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;*/
+}
+
+.otext {
+    margin: 20px;
+}
+
+#name1,
+#tpro,
+#opara {
+    margin-top: 10px;
+}
+
+.ser_wrapper {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #c8cdd5;
+    width: 100%;
+    left: 0px;
+}
+
+.servwrapper {
+    width: 100%;
+    background-color: #c8cdd5;
+}
+
+.serbody {
+    background-color: #c8cdd5;
+}
+
+.nop {
+    height: 220px;
+    width: 220px;
+}
+
+.nyibol {
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.mamuch {
+    display: flex;
+    color: white;
+    background-color: #282f31;
+}
+
+.authors {
+    padding-bottom: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.poster {
+    text-align: center;
+    font-family: myFont;
+}

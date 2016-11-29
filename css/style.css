@@ -1,0 +1,465 @@
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 9999;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Float the list items side by side */
+
+ul.topnav li {
+    float: left;
+}
+
+
+/*.full_body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+*/
+
+.body_part {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#headText {
+    font-size: 48px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+#para_1 {
+    padding-left: 100px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.video_quote {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: right;
+}
+
+a.mov:link {
+    text-decoration-line: none;
+    color: #1b1a22;
+}
+
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+    display: inline-block;
+    color: #1b1a22;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+    background-color: #1b1a22;
+    color: white;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        width: 20px;
+        display: inline-block;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {
+        position: fixed;
+    }
+    ul.topnav.responsive li.icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+.footer_area {
+    background-color: #353940;
+    color: white;
+    display: table;
+    width: 100%;
+    margin: 0px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 10px;
+    height: 40px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: sans-serif;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.headerTittle {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #1b1a22;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #1b1a22;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.footer_email {
+    text-align: center;
+    background-color: #878695;
+    color: white;
+    padding: 20px;
+}
+
+p {
+    padding: 5px;
+}
+
+input[type=submit] {
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    padding: 12px 28px;
+    resize: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.sub12:hover {
+    background-color: red;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footerDiv {
+    vertical-align: middle;
+    display: table;
+    width: 100%;
+    background-color: #353940;
+}
+
+.aboutFooter,
+.newsFooter,
+.socialFooter,
+.contact_us {
+    float: left;
+    position: static;
+    padding-right: 0px;
+    padding-left: 10%;
+}
+
+a.mov:link,
+a.mov:visited {
+    text-decoration: none;
+    background-color: #353940;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 0px;
+    color: white;
+    list-style-type: none;
+}
+
+a.mov:hover,
+a.mov:active {
+    text-transform: capitalize;
+    font-family: myFont;
+    margin-top: 30px;
+    color: white;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    background-color: slategrey;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mlink {
+    padding-top: 10px;
+    /*margin-left: 25%;
+    margin-right: 20%;*/
+    padding-bottom: 25px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.footer_area {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #353940;
+    text-align: left;
+    vertical-align: middle;
+    align-content: middle;
+    width: 100%;
+}
+
+.socialIcons {
+    color: white;
+    background-color: #1b1a22;
+    text-align: right;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    bottom: 0;
+    position: initial;
+}
+
+.mainDiv {
+    max-height: 1920px;
+    background-color: red;
+    max-width: 100%;
+}
+
+.bodyElement {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: table;
+    align-items: center;
+}
+
+#text1,
+#par,
+#contact_form {
+    box-shadow: 0px;
+    padding: 10px;
+}
+
+input {
+    height: 25px;
+    background-color: #d9d9d9;
+}
+
+.artist {
+    width: 100%;
+    height: 600px;
+    background: url(img/artist.jpg) repeat;
+    background-size: cover;
+}
+
+#text2 {
+    color: white;
+    font-size: 100px;
+    padding-top: 250px;
+    padding-left: 300px;
+}
+
+#submit_button {
+    height: 50px;
+    width: 120px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.full_body {
+    background-color: #282f31;
+}
+
+.Divider1 {
+    height: 50px;
+    width: 100%;
+    background-color: #282f31;
+    text-align: center;
+    font-family: myFont;
+    color: white;
+    padding-top: 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#logo1 {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 168px;
+    width: 258px;
+}
+
+.all_posters_wrapper {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    text-align: justify;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#wtallent {
+    padding-bottom: 40px;
+}
+
+.news_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px;
+    text-align: justify;
+    margin-bottom: 0px;
+    background-color: #282f31;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/BodoniFLF-Roman.ttf);
+}
+
+.poster2 {
+    margin-left: 30px;
+}
+
+.newsarticle {
+    width: 50%;
+    padding-left: 5%;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    background-color: #282f31;
+}
+
+.poster {
+    padding: 40px;
+}
+
+.video_quote {
+    font-family: myFont;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    }
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+.body_part {
+    background-color: #000000;
+}
+
+.newsTittle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headerTittle {
+    font-family: myFont;
+}
+
+a.nom:link,
+a.nom:visited {
+    text-decoration: none;
+    color: lightblue;
+}
+
+a.nom:hover,
+a.nom:active {
+    font-family: myFont;
+    margin: 10px 10px 10px;
+    padding: 0px 15px 0px 15px;
+    color: #2E5971;
+    background-color: lightblue;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+    text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fullscreen-bg {
+    width: 100%;
+    height: 75%;
+}

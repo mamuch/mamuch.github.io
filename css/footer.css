@@ -1,0 +1,27 @@
+.el_wrapper {
+    display: flex;
+    background-color: #353940;
+    color: white;
+}
+
+.footer_el {
+    width: 100%;
+    background-color: #353940;
+    margin-left: 40px;
+}
+
+.foot_wrapper {
+    padding: 40px 20px 40px 20px;
+    background-color: #353940;
+}
+
+#links {
+    margin-right: 40px;
+    margin-left: 0px;
+}
+
+#news1 {
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
