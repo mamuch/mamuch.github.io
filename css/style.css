@@ -135,6 +135,8 @@ ul.topnav li.icon {
 body {
     height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 input[type=text] {
@@ -369,6 +371,11 @@ img {
     width: 258px;
 }
 
+.error {
+    color: red;
+    font-size: 10px;
+}
+
 .all_posters_wrapper {
     display: flex;
     align-items: center;
@@ -381,6 +388,11 @@ img {
 
 #wtallent {
     padding-bottom: 40px;
+}
+
+.fullscreen-bg__video {
+    width: 100%;
+    bottom: 0px;
 }
 
 .news_wrapper {

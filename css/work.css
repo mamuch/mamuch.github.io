@@ -64,8 +64,8 @@
 
 .ser_wrapper {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #c8cdd5;
@@ -82,9 +82,13 @@
     background-color: #c8cdd5;
 }
 
+.error {
+    visibility: hidden;
+}
+
 .nop {
-    height: 220px;
-    width: 220px;
+    height: 260px;
+    width: 260px;
 }
 
 .nyibol {

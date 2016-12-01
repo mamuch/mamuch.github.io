@@ -5,10 +5,39 @@
     <meta charset="utf-8">
     <title>Contact US</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="javascript" href="js/javascript.js">
+    <link rel="stylesheet" href="css/form.css">
+    <script type="text/javascript">
+        function verify() {
+            //seeting vars
+            var user = document.getElementById("name");
+            var email = document.getElementById("email");
+            var mess = document.getElementById("message");
 
+            if (name.value) == "") {
+            msg += "Please enter your name ! \n";
+        }
+        if (email.value == "") {
+            msg += "Pease Enter your email \n";
+            pass.classname = "inputBoxError"
+        }
+
+        if (message.value == "") {
+            msg += "Please Enter a comment \n";
+            pass.classname = "inputBoxError"
+        }
+        // submit form part
+        if (mess == "") {
+            return true;
+        } else {
+            alert(mess)
+            return false;
+        }
+        }
+    </script>
 </head>
 
 <body>
@@ -20,8 +49,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="work.html">Work</a></li>
             <li><a href="contact.html">contact</a></li>
-            <li><a href="https://www.facebook.com/enduranceproduction/?hc_ref=SEARCH&fref=nf" target="_blank">Facebook</a></li>
-            <li><a href="https://www.youtube.com/user/moochjohn" target="_blank">Youtube</a></li>
+            <li><a href="company.html">Become a Member</a></li>
             <li class="icon">
                 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>   </li>
         </ul>
@@ -29,23 +57,68 @@
     <div class="mainDiv">
         <img src="img/contact.jpg" alt="We take work seriuosly!">
     </div>
+    <div class="Divider1">
+    </div>
+
+    <div class="Divider1">
+    </div>
     <div class="bodyElement">
         <h1 id="text1">We Want to work with you </h1>
         <p id="par">DhielProd Films likes to take on various projects, whether it be feature films,<br /> documentaries, short films, promotional videos, etc. Let us know your vision.<br /> We can help.</p>
-        <form id="contact_form" action="php/send.php" method="POST" enctype="multipart/form-data">
+        <form id="contact_form" method="POST" enctype="multipart/form-data" name="vacation">
             <div class="row">
-                <input id="name" class="input" name="name" placeholder="Name" type="text" value="" size="78" /><br />
+                <input required id="name" name="id" class="input" name="name" placeholder="Name" type="text" value="" size="78" /><br />
+                <span id="errorname" class="error">This field is required</span>
             </div>
             <div class="row">
-                <input id="email" class="input" name="email" placeholder="E-mail" type="text" value="" size="78" /><br />
+                <input required id="email" name="id" class="input" name="email" placeholder="E-mail" type="text" value="" size="78" /><br />
+                <span id="errorname" class="error">This field is required</span>
             </div>
             <div class="row">
-                <textarea id="message" class="input" name="message" placeholder="Comment" rows="7" cols="60"></textarea><br />
+                <textarea required id="message" name="id" class="input" name="message" placeholder="Comment" rows="7" cols="60"></textarea><br />
+                <span id="errorname" class="error">This field is required</span>
             </div>
-            <a><input class="sub12" id="submit_button" type="submit" value="Send email" /></a>
+            <button onclick="validate();" type="submit">Send</button>
         </form>
     </div>
+    <div class="serbody">
+        <div class="ser_wrapper">
+            <div class="servwrapper">
+                <h1 id="service">Feature Films</h1>
+                <p id="spara">Endurance Films Inc. is focused on continuing the production of feature films, and is open to collaboration with other filmmakers.<br />.<br /> The Human Experience was Endurance Films Inc. first feature length documentary. The film had
+                    a theatrical release in the East Africa, and a grand opening in Juba and Nairobi before gaining distribution. We continue to strive in this field as a valuable player among the millions of film companies today. What makes us different
+                    is our desire to create films that entertain, and inspire. Currently we have begun production on a new documentary that is focused on a group of monks living to serve others. Expected release date is Spring of 2017. .<br />.<br />                    We are also exploring the possibilities of collaborating with other companies and film makers from all over the globe. We find that through these positive relationships we are able to build a trusted community of film makers interested
+                    in making a difference.<br />
 
+                </p>
+            </div>
+            <div class="servwrapper">
+                <h1 id="service">Promotionals</h1>
+                <p id="spara">Call Endurance Films for a quote for your next project. Our team specializes in highly valued content that can promote any business willing to take that next step. Our attitude and skills have made our company very successful in creating
+                    promotional content for different organizations. Our promotional work has defined companies who see the value in hiring a top tier film studio to create their content. Our creativity, and talent allows for promotional content that
+                    is unrivaled, and our past relationships with other film makers and musician in the business makes us affordable to the needs of all seeking, high quality promotional work.
+
+                </p>
+            </div>
+            <div class="servwrapper">
+                <h1 id="service">Events</h1>
+                <p id="spara">We have successfully reached millions of viewers through our campaigns and work with organizations of all sizes to create content that is remembered.<br /> The campaigns we have been a part of are challenging. Getting people excited about
+                    something today has its share of difficulties, but thats a challenge we have continued to meet and overcome for all organizations who have hired us. Our content created has generated millions of eyeballs in short periods of time. We
+                    enjoy working with people who have a mission they are trying to accomplish, and we enjoy being apart of that mission and helping them succeed.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function validate() {
+            var spans = document.getElementByTagName("span");
+            var id = document.vacation.id;
+            if (id.value === "") {
+                spans[0].setAttribute("style", "visibility:visible");
+            }
+        }
+    </script>
 </body>
 <footer class="footer_wrap">
     <div class="footer_email">

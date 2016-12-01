@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Company</title>
+    <title>Become a Member</title>
+    <link rel="shortcut icon" href="img/icon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="javascript" href="js/javascript.js">
+
+    <script src="css/form.js"></script>
 </head>
 
 <body>
@@ -18,14 +22,98 @@
         <ul class="topnav" id="myTopnav">
             <li><a href="index.html">Home</a></li>
             <li><a href="work.html">Work</a></li>
-            <li><a href="company.html">Company</a></li>
-            <li><a href="Blog.html">Blog</a></li>
             <li><a href="contact.html">contact</a></li>
+            <li><a href="company.html">Become a Member</a></li>
             <li class="icon">
                 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>   </li>
         </ul>
     </div>
+    <div class="Divider1">
+    </div>
+    <div class="body_part1">
+        <div class="photobg">
+            <div class="image-wrapper">
+                <img src="img/artist1.jpg" alt="sometext" />
+            </div>
+        </div>
+    </div>
+    <div class="Divider1">
+    </div>
+    <div>
+        <form name="vacation" method="post">
+
+
+            <h1>Sign Up</h1>
+
+            <fieldset>
+                <legend><span class="number">1</span>Your basic info</legend>
+                <label for="name">Name:</label>
+                <input required type="text" id="name" name="user_name">
+                <span id="errorname" class="error">This field is required</span>
+
+                <label for="mail">Email:</label>
+                <input required type="email" id="mail" name="user_email">
+                <span id="errorname" class="error">This field is required</span>
+
+                <label>Age:</label>
+                <input required type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+                <input required type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or older</label>
+                <span id="errorname" class="error">This field is required</span>
+            </fieldset>
+
+            <fieldset>
+                <legend><span class="number">2</span>Your profile</legend>
+                <label for="bio">Biography:</label>
+                <textarea required id="bio" name="user_bio"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="job">Job Role:</label>
+                <select required id="job" name="user_job">
+          <optgroup label="Crew">
+            <option value="frontend_developer">Camera Operator</option>
+            <option value="php_developor">Costume Maker</option>
+            <option value="python_developer">Casting Director</option>
+            <option value="rails_developer">Apprentice Lighting Technician</option>
+            <option value="web_designer">Art Department Assistant</option>
+            <option value="WordPress_developer">Digital Imaging Technician (DIT)</option>
+          </optgroup>
+          <optgroup label="Model">
+            <option value="Android_developer">Comercial Model</option>
+            <option value="iOS_developer">Print Model</option>
+            <option value="mobile_designer">Cloths Model</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="business_owner">Business Owner</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="secretary">Support</option>
+            <option value="maintenance">Sponsor</option>
+          </optgroup>
+          <span id="errorname" class="error">This field is required</span>
+        </select>
+
+                <label>Interests:</label>
+                <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Feature Films</label><br>
+                <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Comercials</label><br>
+                <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Events Shoting</label>
+                <span id="errorname" class="error">This field is required</span>
+
+            </fieldset>
+            <button href="mailto:mamuchj@outlook.com" type="submit">Sign Up</button>
+        </form>
+    </div>
+    </div>
 </body>
+<script type="text/javascript">
+    function validate() {
+        var spans = document.getElementByTagName("span");
+        var id = document.vacation.id;
+        if (id.value === "") {
+            spans[0].setAttribute("style", "visibility:visible");
+        }
+    }
+</script>
 <footer class="footer_wrap">
     <div class="footer_email">
         <h2 id="footerEmail">For more inquirries <a href="contact.html" class="nom">conact us</a> </h2>
