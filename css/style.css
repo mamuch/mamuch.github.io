@@ -135,8 +135,8 @@ ul.topnav li.icon {
 body {
     height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 input[type=text] {
